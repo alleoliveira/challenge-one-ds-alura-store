@@ -28,8 +28,6 @@ Realizar uma análise exploratória de dados (EDA) sobre as quatro lojas da Alur
 - **NumPy** — Suporte matemático e vetorial
 - Estrutura modular de funções para ETL e análises
 
-> Arquivo principal: `challenge_alura_store.py`
-
 
 ---
 
@@ -91,6 +89,7 @@ Ferramentas utilizadas:
 - Visualizações:
     - Barras horizontais
     - Barras agrupadas por ano
+    - Linhas para identificar a movimentação das categorias ao decorrer dos anos
 
 ![COMPARATIVO DE VENDAS POR CATEGORIA E LOJA](https://github.com/alleoliveira/challenge-one-ds-alura-store/blob/main/images/04_comparativo_vendas_categoria_todas_lojas.png?raw=true "COMPARATIVO DE VENDAS POR CATEGORIA E LOJA")
 
@@ -106,17 +105,13 @@ Ferramentas utilizadas:
 
 ## 4. ⭐ **Avaliação das Lojas e Produtos**
 
-KPIs extraídos:
+KPI extraídos:
 
 - Média geral de avaliação por loja
-- Avaliação por categoria
-- Rankings
-- Comparações estruturadas usando `unstack()`
 
 Visualizações sugeridas:
 
 - Barras verticais com anotações
-- Agrupamentos por loja e categoria
 
 ![MÉDIA DE AVALIAÇÃO GERAL DE TODAS LOJAS](https://github.com/alleoliveira/challenge-one-ds-alura-store/blob/main/images/05_media_avaliacao_geral_todas_lojas.png?raw=true "MÉDIA DE AVALIAÇÃO GERAL DE TODAS LOJAS")
 
@@ -163,18 +158,18 @@ Após consolidar todos os indicadores — faturamento, avaliações, categorias,
 
 ---
 
-# 🔥 **➡️ Loja X (substituir pela sua análise final)**
+# 🔥 **➡️ Loja 4 - Recomendação de Venda
 
-### Justificativa (modelo):
+### Justificativa :
 
-- **Faturamento inferior** e evolução mensal inconsistente
-- **Avaliação média abaixo da concorrência**
-- **Volume menor nas categorias líderes**
-- **Maior custo médio de frete**, reduzindo margem
-- **Baixa densidade geográfica de pedidos**, sugerindo alcance limitado
-- **Portfólio de produtos com menor diversidade e alta concentração em poucos itens**
+A partir da consolidação de todos os indicadores analisados, a **Loja 4** se destaca de forma consistente como a unidade com **menor desempenho global**. Ao observarmos a série histórica de faturamento, percebemos que essa loja ficou abaixo das demais em **três dos quatro anos avaliados**, revelando um padrão persistente de baixa performance. Essa tendência também se confirma na análise mensal: em **26 dos 38 meses analisados**, suas vendas ficaram abaixo da média geral das lojas, reforçando a falta de tração comercial ao longo do tempo.
 
-> Com base no conjunto completo das análises, esta loja demonstra **menor eficiência operacional**, menor resiliência e menor potential de crescimento, sendo a melhor opção para desinvestimento.
+Ao aprofundar a investigação por categorias — principal motor de receita da Alura Store — a situação se torna ainda mais clara. Entre as quatro categorias mais relevantes (Eletrônicos, Eletrodomésticos, Móveis e Instrumentos Musicais), a Loja 4 apresentou desempenho significativamente inferior em quase todas elas. A **única exceção foi a categoria de Móveis**, onde conseguiu acompanhar o ritmo das demais; porém, sua fraqueza nas outras linhas críticas impede que esse ponto isolado compense a defasagem geral.
+
+Outros indicadores operacionais, como **avaliação média**, **custo de frete** e **distribuição geográfica de pedidos**, foram avaliados cuidadosamente. Entretanto, como esses fatores **não apresentaram discrepâncias significativas entre as lojas**, eles não foram decisivos para a escolha final. Isso reforça ainda mais que o problema da Loja 4 não é pontual nem operacional — é estruturalmente ligado ao seu **baixo poder de conversão e volume de vendas**.
+
+>Dessa forma, considerando o desempenho historicamente inferior, a consistência do baixo faturamento, o enfraquecimento nas principais categorias e a falta de indicadores compensatórios, a **Loja 4 se apresenta como a opção mais estratégica para desinvestimento**. Essa decisão permite que seu João direcione recursos para unidades mais robustas ou para o novo empreendimento com maior segurança e potencial de retorno.
+
 
 ---
 
@@ -182,7 +177,7 @@ Após consolidar todos os indicadores — faturamento, avaliações, categorias,
 
 1. Clone o repositório:
     
-    `git clone https://github.com/seuusuario/alura-store-analysis.git`
+    `git clone https://github.com/alleoliveira/challenge-one-ds-alura-store.git`
     
 2. Instale as dependências:
     
